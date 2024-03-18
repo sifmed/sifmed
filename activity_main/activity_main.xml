@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GSB-RV"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:layout_margin="50dp"
+        android:id="@+id/GSB_RV2"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/matricule"
+        android:layout_below="@+id/GSB_RV2"
+        android:background="#30ffffff"
+        android:hint="Matricule"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mdp"
+        android:layout_below="@+id/matricule"
+        android:background="#30ffffff"
+        android:hint="Mot de passe "
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_arrow_circle_right_24"
+        android:drawablePadding="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_connecter"
+        android:layout_below="@id/mdp"
+        android:text="@string/btn_connecter"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+
+
+
+
+</RelativeLayout>
